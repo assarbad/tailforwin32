@@ -940,7 +940,7 @@ void CTailView::ReloadKeywords (
           if (m_ppszList[j])
           {
             // Bug #1473486 - Use case insensitive comparison.
-            if (strcmpi (m_ppszList[j], pstNewKeywordList[i].szKeyword) == 0)
+            if (lstrcmpi (m_ppszList[j], pstNewKeywordList[i].szKeyword) == 0)
             {
               pstNewKeywordList[i].dwMatches = m_pstKeywordList[i].dwMatches;
               strcpy (pstNewKeywordList[i].szTimestamp, m_pstKeywordList[i].szTimestamp);
